@@ -1,0 +1,16 @@
+{
+  "name": "BetterTopReddit",
+  "short_name": "BetterTopReddit",
+  "version": "1",
+  "description": "Adds more advanced sorting for Reddit Top posts, such as 'past X days'.",
+  "manifest_version": 2,
+  "author": "mylesmar10",
+  "homepage_url": "https://github.com/mylesmar10/BetterTopReddit",
+  "icons": {  "16": "16.png",
+                "48": "48.png",
+                "128": "128.png" },
+  "content_scripts": [ {
+    "js": [ "jquery-3.1.1.min.js", "better_top_reddit.js"],
+    "matches": ["https://www.reddit.com/r/*/top/*","https://www.reddit.com/top/*"]
+  }]
+}
